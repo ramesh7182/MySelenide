@@ -1,0 +1,9 @@
+testcase,torun,language,testdata1
+openGoogle,y,en,Kindle
+openGoogle,y,en,Headset
+openGoogle,n,jp,echo
+openGoogle,y,en,echo
+testMethod,y,en,kindle
+testMethod,y,jp,echo
+testMethod,n,jp,echo
+testMethod,y,en,echo
