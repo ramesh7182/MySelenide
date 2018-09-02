@@ -1,4 +1,5 @@
 package com.rk.googletest;
+import com.home.Listners.ListenerTest;
 import com.home.Pages.TestDataProvider;
 import org.testng.annotations.*;
 import ru.yandex.qatools.allure.annotations.Step;
@@ -13,7 +14,7 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Properties;
 
-@Listeners(com.home.Listners.ListenerTest.class)
+@Listeners(ListenerTest.class)
 
 public class GoogleSmoke extends  TestDataProvider{
 
