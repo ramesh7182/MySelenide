@@ -4,7 +4,7 @@
 .idea/workspace.xml
 .metadata/
 temp/
-
+*.iml
 # Package Files #
 *.jar
 *.war
