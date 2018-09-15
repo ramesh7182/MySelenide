@@ -1,4 +1,5 @@
 package com.home;
+import com.home.Pages.GoogleHome;
 import com.home.Pages.TestDataProvider;
 import org.testng.annotations.*;
 import ru.yandex.qatools.allure.annotations.Step;
@@ -49,9 +50,20 @@ public class OpenSites extends  TestDataProvider{
         System.out.println("To Run "+data.get("torun").toString());
         System.out.println("Language "+data.get("language").toString());
         System.out.println("Test Data 1 "+data.get("testdata1").toString());
+
+        System.out.println("---Test Data 1 "+data.get("testdata1").toString());
+        GoogleHome googleHome = new GoogleHome();
+        googleHome.enterSearchTerm(data.get("testdata1").toString());
+        System.out.println("--Test Data 1 "+data.get("testdata1").toString());
 	}
 
-   
+	@Test(description="Search Google", dataProvider = "readTestData")
+	public static void searchGoogle(HashMap<Object, Object> data) {
+        System.out.println("Test Data 1 "+data.get("testdata1").toString());
+		GoogleHome googleHome = new GoogleHome();
+		googleHome.enterSearchTerm(data.get("testdata1").toString());
+		System.out.println("Test Data 1 "+data.get("testdata1").toString());
+	}
 
 }
 
