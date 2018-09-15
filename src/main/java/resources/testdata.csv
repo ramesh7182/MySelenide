@@ -8,3 +8,4 @@ testMethod,y,jp,echo
 testMethod,n,jp,echo
 testMethod,y,en,echo
 searchGoogle,y,en,echo
+searchGoogle,n,en,echo

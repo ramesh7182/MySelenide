@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.Selenide.$;
 import static org.testng.CommandLineArgs.LOG;
 
-public class GoogleHome {
+public class GoogleHome extends CommonMethod {
 
     public GoogleHome()
     {
@@ -24,8 +24,8 @@ public class GoogleHome {
     public void enterSearchTerm(String searchTerm)
     {
         System.out.println("Enter:enterSearchTerm");
-        searchBox.should(Condition.visible);
-        searchBox.sendKeys(searchTerm);
+        enterText(searchBox, searchTerm);
+        wait(5000);
         System.out.println("Exit:enterSearchTerm");
     }
 }
