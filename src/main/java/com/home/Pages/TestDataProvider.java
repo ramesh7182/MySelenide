@@ -9,7 +9,7 @@ import java.lang.reflect.Method;
 public class TestDataProvider
 {
 public static String testCaseName;
-private static String testdatapath = "C:\\Users\\kumar\\eclipse-workspace\\Selenide\\src\\main\\java\\resources\\testdata.csv";
+private static String testdatapath = ".\\src\\main\\java\\resources\\testdata.csv";
 
     public static Object[][] readTestData(Method method)
     {

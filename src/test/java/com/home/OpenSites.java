@@ -20,7 +20,7 @@ public class OpenSites extends  TestDataProvider{
     @BeforeMethod
     public void nameBefore(Method method)
     {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\kumar\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", ".\\src\\main\\java\\resources\\chromedriver.exe");
 		System.setProperty("selenide.browser", "Chrome");
 		timeout = 10000;
 		baseUrl = "https://www.amazon.com";
